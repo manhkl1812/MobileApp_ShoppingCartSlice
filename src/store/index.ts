@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import carReducer from './cardSlice';
+import cartReducer from './cardSlice';
+import counterReducer from './counterSlice';
 
 export const store = configureStore({
   reducer: {
-    cart: carReducer,
+    cart: cartReducer,
+    counter: counterReducer, // Thêm counter vào đây
   },
 });
 
